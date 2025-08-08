@@ -38,8 +38,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3556500695
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ragdoll
+    uniqueID: 3538626495
+    locked: 0
+  - name: Top
+    uniqueID: 4199987205
     locked: 0
   m_RenderingLayers:
   - Default
