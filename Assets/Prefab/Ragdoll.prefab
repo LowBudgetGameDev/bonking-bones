@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3736149652436201404}
   - component: {fileID: 6227292056513191286}
   - component: {fileID: 2574252174996352135}
+  - component: {fileID: 3964129338242068181}
   m_Layer: 6
   m_Name: Stickman_Arm_LR
   m_TagString: Untagged
@@ -190,6 +191,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.10490694, y: 0.40439934}
   m_EdgeRadius: 0
+--- !u!114 &3964129338242068181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59077860285800846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 1
 --- !u!1 &1585648777885200396
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +217,7 @@ GameObject:
   - component: {fileID: 3826163506564643607}
   - component: {fileID: 6256802202387269041}
   - component: {fileID: 8252288031908701020}
+  - component: {fileID: 260327195723883868}
   m_Layer: 6
   m_Name: Stickman_Arm_UR
   m_TagString: Untagged
@@ -380,6 +395,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.10490694, y: 0.40439934}
   m_EdgeRadius: 0
+--- !u!114 &260327195723883868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585648777885200396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 1
 --- !u!1 &1665112247859872836
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +595,7 @@ GameObject:
   - component: {fileID: 4654395644227590146}
   - component: {fileID: 3081599888060730043}
   - component: {fileID: 1636466058651820137}
+  - component: {fileID: 3839886142061318773}
   m_Layer: 6
   m_Name: Stickman_Leg_LR
   m_TagString: Untagged
@@ -744,6 +773,19 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &3839886142061318773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139906997219928844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 1
 --- !u!1 &2512641127140106708
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +885,7 @@ GameObject:
   - component: {fileID: 5683910835417333886}
   - component: {fileID: 2500402408771781178}
   - component: {fileID: 9082648455269493674}
+  - component: {fileID: 5626523465042385986}
   m_Layer: 6
   m_Name: Stickman_Torso
   m_TagString: Untagged
@@ -994,6 +1037,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &5626523465042385986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2723149243504452371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 5
 --- !u!1 &4452775140069783425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1150,7 @@ GameObject:
   - component: {fileID: 2338350502103359590}
   - component: {fileID: 3339677106687415353}
   - component: {fileID: 7185592244398616338}
+  - component: {fileID: 8576768960913779703}
   m_Layer: 6
   m_Name: Stickman_Head
   m_TagString: Untagged
@@ -1261,6 +1318,19 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &8576768960913779703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4462637373178972124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 2
 --- !u!1 &5005585495854050081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,6 +1344,7 @@ GameObject:
   - component: {fileID: 7855367085161400866}
   - component: {fileID: 452898649017164579}
   - component: {fileID: 498181082895006123}
+  - component: {fileID: 4366088845968416871}
   m_Layer: 6
   m_Name: Stickman_Leg_UL
   m_TagString: Untagged
@@ -1451,6 +1522,19 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &4366088845968416871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5005585495854050081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 1
 --- !u!1 &5337305514504375245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,6 +1867,7 @@ GameObject:
   - component: {fileID: 6441309152366524376}
   - component: {fileID: 8725018175150364273}
   - component: {fileID: 6539282554281276233}
+  - component: {fileID: 2875703128557951195}
   m_Layer: 6
   m_Name: Stickman_Arm_UL
   m_TagString: Untagged
@@ -1960,6 +2045,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.10490694, y: 0.40439934}
   m_EdgeRadius: 0
+--- !u!114 &2875703128557951195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281244191563673821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 1
 --- !u!1 &6408382596474924080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,6 +2158,7 @@ GameObject:
   - component: {fileID: 8649307005114003903}
   - component: {fileID: 639778522081369084}
   - component: {fileID: 3113724851995370321}
+  - component: {fileID: 7909478266737475128}
   m_Layer: 6
   m_Name: Stickman_Leg_LL
   m_TagString: Untagged
@@ -2237,6 +2336,19 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &7909478266737475128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7018454181170601168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 1
 --- !u!1 &7255893935151337454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,6 +2362,7 @@ GameObject:
   - component: {fileID: 4631373729352245098}
   - component: {fileID: 6024602380340137682}
   - component: {fileID: 1776002888507311451}
+  - component: {fileID: 303780686969557092}
   m_Layer: 6
   m_Name: Stickman_Arm_LL
   m_TagString: Untagged
@@ -2427,6 +2540,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.10490694, y: 0.40439934}
   m_EdgeRadius: 0
+--- !u!114 &303780686969557092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7255893935151337454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 1
 --- !u!1 &8203380461181672725
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,6 +2772,7 @@ GameObject:
   - component: {fileID: 900524865564179073}
   - component: {fileID: 1239155454867114747}
   - component: {fileID: 5920557266371177537}
+  - component: {fileID: 5199990108558180105}
   m_Layer: 6
   m_Name: Stickman_Leg_UR
   m_TagString: Untagged
@@ -2823,6 +2950,19 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &5199990108558180105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8938395703080300942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7aa6387c26f3054dbfc9328fb53ee59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMultiplier: 1
 --- !u!1 &9089971849016483575
 GameObject:
   m_ObjectHideFlags: 0
