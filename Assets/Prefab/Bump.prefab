@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 7660472530454883510}
   - component: {fileID: 1884461347304497873}
   - component: {fileID: 9146254502086383221}
-  - component: {fileID: 1806467746539315421}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: Bump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,22 +131,6 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 1
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &1806467746539315421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 782692200031469633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fb5da2b052077e439cab057ed7f0bb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bumpPrefab: {fileID: 7660472530454883510, guid: 865d864e3a7b9d54299809d65ce324e6, type: 3}
-  spacing: 1
-  minSize: 1
-  maxSize: 3
+  m_EdgeRadius: 0.5
