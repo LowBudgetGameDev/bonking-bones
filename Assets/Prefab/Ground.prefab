@@ -132,9 +132,9 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 1
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.5
 --- !u!114 &1806467746539315421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +148,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumpPrefab: {fileID: 7660472530454883510, guid: 865d864e3a7b9d54299809d65ce324e6, type: 3}
-  spacing: 1
   minSize: 1
   maxSize: 3
