@@ -3,8 +3,8 @@ using UnityEngine;
 public class Mountain : MonoBehaviour
 {
     [SerializeField] private Transform bumpPrefab;
-    [SerializeField] private float minSize = 3f;
-    [SerializeField] private float maxSize = 10f;
+    [SerializeField][Range(0.5f, 10f)] private float minSize = 3f;
+    [SerializeField][Range(0.5f, 10f)] private float maxSize = 10f;
 
     private float spacing;
 

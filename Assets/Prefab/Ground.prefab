@@ -148,5 +148,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumpPrefab: {fileID: 7660472530454883510, guid: 865d864e3a7b9d54299809d65ce324e6, type: 3}
-  minSize: 1
-  maxSize: 3
+  minSize: 2
+  maxSize: 5

@@ -354,11 +354,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1806467746539315421, guid: 59e9f0157346b6749a21fa9e3a2a758e, type: 3}
       propertyPath: maxSize
-      value: 0.2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1806467746539315421, guid: 59e9f0157346b6749a21fa9e3a2a758e, type: 3}
       propertyPath: minSize
-      value: 0.05
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1884461347304497873, guid: 59e9f0157346b6749a21fa9e3a2a758e, type: 3}
       propertyPath: m_Size.x
