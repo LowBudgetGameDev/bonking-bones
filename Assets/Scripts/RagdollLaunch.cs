@@ -6,7 +6,7 @@ public class RagdollLaunch : MonoBehaviour
     [SerializeField] private Transform launchArrowTransform; // The arrow should be a child of the ragdoll to make things easier
     [SerializeField] private SpriteRenderer launchArrowSpriteRenderer;
 
-    private float maxLaunchStrength = 500f;
+    private float maxLaunchStrength = 100f;
     private float maxDragDistance = 10f;
     private float maxArrowSize = 5f;
 
