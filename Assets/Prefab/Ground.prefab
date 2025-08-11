@@ -150,3 +150,7 @@ MonoBehaviour:
   bumpPrefab: {fileID: 7660472530454883510, guid: 865d864e3a7b9d54299809d65ce324e6, type: 3}
   minSize: 2
   maxSize: 5
+  decorationPrefab: {fileID: 6660966763757556932, guid: 754eed570f291b149a0de36d73b12399, type: 3}
+  decorMinSize: 0.75
+  decorMaxSize: 1.5
+  decorChance: 0.1

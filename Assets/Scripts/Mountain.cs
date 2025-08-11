@@ -2,9 +2,16 @@ using UnityEngine;
 
 public class Mountain : MonoBehaviour
 {
+    [Header("Bump Info")]
     [SerializeField] private Transform bumpPrefab;
     [SerializeField][Range(0.5f, 10f)] private float minSize = 3f;
     [SerializeField][Range(0.5f, 10f)] private float maxSize = 10f;
+
+    [Header("Decoration Info")]
+    [SerializeField] private Transform decorationPrefab;
+    [SerializeField][Range(0.5f, 3f)] private float decorMinSize = 0.75f;
+    [SerializeField][Range(0.5f, 3f)] private float decorMaxSize = 1.5f;
+    [SerializeField][Range(0.01f, 1f)] private float decorChance = 0.1f;
 
     private float spacing;
 
@@ -41,6 +48,22 @@ public class Mountain : MonoBehaviour
 
             bumpSpriteRenderer.color = spriteRenderer.color;
             bumpSpriteRenderer.size = new Vector2(Random.Range(minSize, maxSize), Random.Range(minSize, maxSize));
+
+            float randomFloat = Random.Range(0f, 1f);
+
+            if (randomFloat < decorChance)
+            {
+                float bumpX = bump.position.x;
+                float bumpY = bump.position.y;
+
+                int layerMask = 1 << bump.gameObject.layer;
+                RaycastHit2D hit = Physics2D.Raycast(new Vector2(bumpX, bumpY + 50f), Vector2.down, 50f, layerMask); // Raise up the start some amount so we know its above
+
+                // Minus some part in the y so the decoration doesn't appear to be floating
+                Transform decor = Instantiate(decorationPrefab, hit.point + Vector2.down * 0.75f, Quaternion.identity, transform);
+
+                decor.localScale = Vector3.one * Random.Range(decorMinSize, decorMaxSize);
+            }
         }
     }
 }
