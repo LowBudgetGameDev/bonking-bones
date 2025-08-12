@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8675783584006257928}
   - component: {fileID: 222677912446795925}
-  - component: {fileID: 6495057285669174769}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -88,59 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6495057285669174769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5709311494676658583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: -5
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: d7e4fbd300000000bf27ebd205b856fa
-  m_ShapePath:
-  - {x: -1.8536377, y: -0.00000047683716, z: 0}
-  - {x: -1.8536377, y: 5.399323, z: 0}
-  - {x: 1.8536377, y: 5.399323, z: 0}
-  - {x: 1.8536377, y: -0.00000047683716, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 222677912446795925}
-  m_ShadowShape2DProvider:
-    rid: 7981661937603969119
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0.004989624, y: 2.7029724, z: 0}
-      m_Extent: {x: 1.7590332, y: 2.602188, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.1
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.1
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 222677912446795925}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661937603969119
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
 --- !u!1 &8685243780487156183
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6660966763757556932}
   - component: {fileID: -4031392955474350424}
+  - component: {fileID: 5121233334217963620}
   m_Layer: 0
   m_Name: Decoration
   m_TagString: Untagged
@@ -190,4 +137,17 @@ MonoBehaviour:
   - {fileID: 2241998923932249737, guid: 53a5d4798b3475143b68d4f47fd7e84a, type: 3}
   - {fileID: 7886953434354787527, guid: 53a5d4798b3475143b68d4f47fd7e84a, type: 3}
   - {fileID: -5247947507511656108, guid: 53a5d4798b3475143b68d4f47fd7e84a, type: 3}
+  spriteRenderer: {fileID: 222677912446795925}
+--- !u!114 &5121233334217963620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8685243780487156183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f388a60796a28024b97cb3013a25c74a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 222677912446795925}
