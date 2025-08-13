@@ -77,4 +77,9 @@ public class RagdollLaunch : MonoBehaviour
     {
         torsoRigidbody2D.constraints = RigidbodyConstraints2D.None;
     }
+
+    public bool GetHasLaunched()
+    {
+        return hasLaunched;
+    }
 }

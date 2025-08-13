@@ -48,6 +48,7 @@ public class Mountain : MonoBehaviour
 
             bumpSpriteRenderer.color = spriteRenderer.color;
             bumpSpriteRenderer.size = new Vector2(Random.Range(minSize, maxSize), Random.Range(minSize, maxSize));
+            bumpSpriteRenderer.sortingOrder = spriteRenderer.sortingOrder;
 
             float randomFloat = Random.Range(0f, 1f);
 

@@ -225,7 +225,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: -0.4043993, y: -0.05245304, z: 0}
   - {x: -0.4043993, y: 0.052453518, z: 0}
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: -0.4043993, y: -0.05245304, z: 0}
   - {x: -0.4043993, y: 0.052453518, z: 0}
@@ -915,7 +915,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: -0.05245347, y: -0.4551611, z: 0}
   - {x: -0.05245347, y: 0, z: 0}
@@ -1233,7 +1233,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: -0.05245347, y: -0.5025382, z: 0}
   - {x: -0.05245347, y: 0.5025382, z: 0}
@@ -1568,7 +1568,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: -0.25211507, y: -0.25211525, z: 0}
   - {x: -0.25211507, y: 0.25211525, z: 0}
@@ -1826,7 +1826,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: -0.05245347, y: -0.4551611, z: 0}
   - {x: -0.05245347, y: 0, z: 0}
@@ -2043,6 +2043,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9025026103100815234}
   - component: {fileID: -4984851304365070725}
+  - component: {fileID: 7663437665111644158}
+  - component: {fileID: 2868529414853772272}
   m_Layer: 6
   m_Name: Ragdoll
   m_TagString: Untagged
@@ -2091,6 +2093,32 @@ MonoBehaviour:
   torsoRigidbody2D: {fileID: 9082648455269493674}
   launchArrowTransform: {fileID: 8689928076470448818}
   launchArrowSpriteRenderer: {fileID: 7379834527036382564}
+--- !u!114 &7663437665111644158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6039238693453934730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1b9f10938c3c040968823807a6c5b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torsoRigidbody2D: {fileID: 9082648455269493674}
+--- !u!114 &2868529414853772272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6039238693453934730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8088491235a2c6b409159708aa52c18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torsoTransform: {fileID: 17255650649498630}
 --- !u!1 &6166020286725202583
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,7 +2431,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: 0, y: -0.05245304, z: 0}
   - {x: 0, y: 0.052453518, z: 0}
@@ -2748,7 +2776,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: -0.05245347, y: -0.4551611, z: 0}
   - {x: -0.05245347, y: 0, z: 0}
@@ -3006,7 +3034,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: 0, y: -0.05245304, z: 0}
   - {x: 0, y: 0.052453518, z: 0}
@@ -3470,7 +3498,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 0000000005b856fa
+  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
   m_ShapePath:
   - {x: -0.05245347, y: -0.4551611, z: 0}
   - {x: -0.05245347, y: 0, z: 0}
