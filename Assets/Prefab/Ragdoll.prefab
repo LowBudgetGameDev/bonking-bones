@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6227292056513191286}
   - component: {fileID: 2574252174996352135}
   - component: {fileID: 3964129338242068181}
-  - component: {fileID: 1132479862225860718}
+  - component: {fileID: 7244383501030120783}
   m_Layer: 6
   m_Name: Stickman_Arm_LR
   m_TagString: Untagged
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 1
---- !u!114 &1132479862225860718
+--- !u!114 &7244383501030120783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,50 +214,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 59077860285800846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: 0
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: -0.4043993, y: -0.05245304, z: 0}
-  - {x: -0.4043993, y: 0.052453518, z: 0}
-  - {x: 0, y: 0.052453518, z: 0}
-  - {x: 0, y: -0.05245304, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 6455483887013172809}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476307
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: -0.20219421, z: 0}
-      m_Extent: {x: 0.047439575, y: 0.19718933, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.005
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.005
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 6455483887013172809}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476307
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &1585648777885200396
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +232,7 @@ GameObject:
   - component: {fileID: 6256802202387269041}
   - component: {fileID: 8252288031908701020}
   - component: {fileID: 260327195723883868}
-  - component: {fileID: 5274916124729877411}
+  - component: {fileID: 5206271263435947720}
   m_Layer: 6
   m_Name: Stickman_Arm_UR
   m_TagString: Untagged
@@ -463,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 1
---- !u!114 &5274916124729877411
+--- !u!114 &5206271263435947720
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -472,50 +432,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1585648777885200396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: 0
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: -0.4043993, y: -0.05245304, z: 0}
-  - {x: -0.4043993, y: 0.052453518, z: 0}
-  - {x: 0, y: 0.052453518, z: 0}
-  - {x: 0, y: -0.05245304, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 6289696413340259877}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476308
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: -0.20219421, z: 0}
-      m_Extent: {x: 0.047439575, y: 0.19718933, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.005
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.005
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 6289696413340259877}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476308
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &1665112247859872836
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,7 +624,7 @@ GameObject:
   - component: {fileID: 3081599888060730043}
   - component: {fileID: 1636466058651820137}
   - component: {fileID: 3839886142061318773}
-  - component: {fileID: 5941784620580911895}
+  - component: {fileID: 3205795121754743944}
   m_Layer: 6
   m_Name: Stickman_Leg_LR
   m_TagString: Untagged
@@ -895,7 +815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 1
---- !u!114 &5941784620580911895
+--- !u!114 &3205795121754743944
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -904,50 +824,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2139906997219928844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: 0
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: -0.05245347, y: -0.4551611, z: 0}
-  - {x: -0.05245347, y: 0, z: 0}
-  - {x: 0.05245347, y: 0, z: 0}
-  - {x: 0.05245347, y: -0.4551611, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 6695616803634789976}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476303
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: -0.22757721, z: 0}
-      m_Extent: {x: 0.047439575, y: 0.22257233, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.005
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.005
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 6695616803634789976}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476303
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &2512641127140106708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +928,7 @@ GameObject:
   - component: {fileID: 2500402408771781178}
   - component: {fileID: 9082648455269493674}
   - component: {fileID: 5626523465042385986}
-  - component: {fileID: 4585757283435085882}
+  - component: {fileID: 9021182081675975599}
   m_Layer: 6
   m_Name: Stickman_Torso
   m_TagString: Untagged
@@ -1213,7 +1093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 5
---- !u!114 &4585757283435085882
+--- !u!114 &9021182081675975599
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1222,50 +1102,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2723149243504452371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: 0
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: -0.05245347, y: -0.5025382, z: 0}
-  - {x: -0.05245347, y: 0.5025382, z: 0}
-  - {x: 0.05245347, y: 0.5025382, z: 0}
-  - {x: 0.05245347, y: -0.5025382, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 5683910835417333886}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476311
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.047439575, y: 0.49752808, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.005
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.005
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 5683910835417333886}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476311
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &4452775140069783425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,7 +1207,7 @@ GameObject:
   - component: {fileID: 3339677106687415353}
   - component: {fileID: 7185592244398616338}
   - component: {fileID: 8576768960913779703}
-  - component: {fileID: 4190082361909239748}
+  - component: {fileID: 943768469551329221}
   m_Layer: 6
   m_Name: Stickman_Head
   m_TagString: Untagged
@@ -1548,7 +1388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 2
---- !u!114 &4190082361909239748
+--- !u!114 &943768469551329221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1557,50 +1397,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4462637373178972124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: 0
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: -0.25211507, y: -0.25211525, z: 0}
-  - {x: -0.25211507, y: 0.25211525, z: 0}
-  - {x: 0.25211507, y: 0.25211525, z: 0}
-  - {x: 0.25211507, y: -0.25211525, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 4219125133534641822}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476312
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.23210144, y: 0.23210144, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.02
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.02
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 4219125133534641822}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476312
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &5005585495854050081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,7 +1415,7 @@ GameObject:
   - component: {fileID: 452898649017164579}
   - component: {fileID: 498181082895006123}
   - component: {fileID: 4366088845968416871}
-  - component: {fileID: 6069741408013754553}
+  - component: {fileID: 2356470507681316241}
   m_Layer: 6
   m_Name: Stickman_Leg_UL
   m_TagString: Untagged
@@ -1806,7 +1606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 1
---- !u!114 &6069741408013754553
+--- !u!114 &2356470507681316241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1815,50 +1615,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5005585495854050081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: -1
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: -0.05245347, y: -0.4551611, z: 0}
-  - {x: -0.05245347, y: 0, z: 0}
-  - {x: 0.05245347, y: 0, z: 0}
-  - {x: 0.05245347, y: -0.4551611, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 3653817828216791520}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476306
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: -0.22757721, z: 0}
-      m_Extent: {x: 0.047439575, y: 0.22257233, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.005
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.005
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 3653817828216791520}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476306
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &5337305514504375245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,7 +1980,7 @@ GameObject:
   - component: {fileID: 8725018175150364273}
   - component: {fileID: 6539282554281276233}
   - component: {fileID: 2875703128557951195}
-  - component: {fileID: 8840553045750497353}
+  - component: {fileID: 5925403809940497115}
   m_Layer: 6
   m_Name: Stickman_Arm_UL
   m_TagString: Untagged
@@ -2411,7 +2171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 1
---- !u!114 &8840553045750497353
+--- !u!114 &5925403809940497115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2420,50 +2180,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6281244191563673821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: -1
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: 0, y: -0.05245304, z: 0}
-  - {x: 0, y: 0.052453518, z: 0}
-  - {x: 0.4043993, y: 0.052453518, z: 0}
-  - {x: 0.4043993, y: -0.05245304, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 6508805084812172722}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476310
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: -0.20219421, z: 0}
-      m_Extent: {x: 0.047439575, y: 0.19718933, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.005
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.005
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 6508805084812172722}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476310
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &6408382596474924080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,7 +2285,7 @@ GameObject:
   - component: {fileID: 639778522081369084}
   - component: {fileID: 3113724851995370321}
   - component: {fileID: 7909478266737475128}
-  - component: {fileID: 7143577805053595688}
+  - component: {fileID: 2585143461266490590}
   m_Layer: 6
   m_Name: Stickman_Leg_LL
   m_TagString: Untagged
@@ -2756,7 +2476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 1
---- !u!114 &7143577805053595688
+--- !u!114 &2585143461266490590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2765,50 +2485,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7018454181170601168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: -1
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: -0.05245347, y: -0.4551611, z: 0}
-  - {x: -0.05245347, y: 0, z: 0}
-  - {x: 0.05245347, y: 0, z: 0}
-  - {x: 0.05245347, y: -0.4551611, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 8312044752215503822}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476305
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: -0.22757721, z: 0}
-      m_Extent: {x: 0.047439575, y: 0.22257233, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.005
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.005
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 8312044752215503822}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476305
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &7255893935151337454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,7 +2503,7 @@ GameObject:
   - component: {fileID: 6024602380340137682}
   - component: {fileID: 1776002888507311451}
   - component: {fileID: 303780686969557092}
-  - component: {fileID: 5041790218743553832}
+  - component: {fileID: 762369544523738833}
   m_Layer: 6
   m_Name: Stickman_Arm_LL
   m_TagString: Untagged
@@ -3014,7 +2694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 1
---- !u!114 &5041790218743553832
+--- !u!114 &762369544523738833
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3023,50 +2703,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7255893935151337454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: -1
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: 0, y: -0.05245304, z: 0}
-  - {x: 0, y: 0.052453518, z: 0}
-  - {x: 0.4043993, y: 0.052453518, z: 0}
-  - {x: 0.4043993, y: -0.05245304, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 6794179640031385210}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476309
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: -0.20219421, z: 0}
-      m_Extent: {x: 0.047439575, y: 0.19718933, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.005
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.005
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 6794179640031385210}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476309
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &8203380461181672725
 GameObject:
   m_ObjectHideFlags: 0
@@ -3287,7 +2927,7 @@ GameObject:
   - component: {fileID: 1239155454867114747}
   - component: {fileID: 5920557266371177537}
   - component: {fileID: 5199990108558180105}
-  - component: {fileID: 7165497766877897982}
+  - component: {fileID: 4093922954437361730}
   m_Layer: 6
   m_Name: Stickman_Leg_UR
   m_TagString: Untagged
@@ -3478,7 +3118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMultiplier: 1
---- !u!114 &7165497766877897982
+--- !u!114 &4093922954437361730
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3487,50 +3127,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8938395703080300942}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 959270a16b5f82947a5a47804b6161ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: 0
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 05b856fad7e4fbd300000000
-  m_ShapePath:
-  - {x: -0.05245347, y: -0.4551611, z: 0}
-  - {x: -0.05245347, y: 0, z: 0}
-  - {x: 0.05245347, y: 0, z: 0}
-  - {x: 0.05245347, y: -0.4551611, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 7285978631698400538}
-  m_ShadowShape2DProvider:
-    rid: 7981661898295476304
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0, y: -0.22757721, z: 0}
-      m_Extent: {x: 0.047439575, y: 0.22257233, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.005
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.005
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 7285978631698400538}
-  references:
-    version: 2
-    RefIds:
-    - rid: 7981661898295476304
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  sortingLayers: 000000000100000003000000
 --- !u!1 &9089971849016483575
 GameObject:
   m_ObjectHideFlags: 0
