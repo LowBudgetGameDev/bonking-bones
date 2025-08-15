@@ -7,7 +7,7 @@ public class RagdollReset : MonoBehaviour
     private RagdollLaunch ragdollLaunch;
 
     private float restTimer;
-    private float restTimerMax = 3f;
+    private float restTimerMax = 0.5f;
 
     private float maxRestSpeed = 0.1f;
 
