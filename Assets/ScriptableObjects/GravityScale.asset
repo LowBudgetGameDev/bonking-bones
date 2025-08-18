@@ -15,6 +15,6 @@ MonoBehaviour:
   nameString: Gravity Scale
   upgrade: 2
   startingPrice: 125
-  priceMultiplier: 2.4
+  priceMultiplier: 2.7
   startValue: 1
   valueChangeAmount: 0.7

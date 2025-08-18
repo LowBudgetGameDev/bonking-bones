@@ -15,6 +15,6 @@ MonoBehaviour:
   nameString: Throw Strength
   upgrade: 4
   startingPrice: 200
-  priceMultiplier: 2.4
+  priceMultiplier: 2.7
   startValue: 100
   valueChangeAmount: 70

@@ -15,6 +15,6 @@ MonoBehaviour:
   nameString: Bounce Increase
   upgrade: 0
   startingPrice: 75
-  priceMultiplier: 2.2
+  priceMultiplier: 2.5
   startValue: 0
   valueChangeAmount: 0.1

@@ -15,6 +15,6 @@ MonoBehaviour:
   nameString: Friction Decrease
   upgrade: 1
   startingPrice: 75
-  priceMultiplier: 2.2
+  priceMultiplier: 2.5
   startValue: 1
   valueChangeAmount: -0.1
