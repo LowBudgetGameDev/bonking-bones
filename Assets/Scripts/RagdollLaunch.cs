@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class RagdollLaunch : MonoBehaviour
 {
@@ -6,7 +7,6 @@ public class RagdollLaunch : MonoBehaviour
     [SerializeField] private Transform launchArrowTransform; // The arrow should be a child of the ragdoll to make things easier
     [SerializeField] private SpriteRenderer launchArrowSpriteRenderer;
 
-    private float maxLaunchStrength = 100f;
     private float maxDragDistance = 10f;
     private float maxArrowSize = 5f;
 
@@ -26,6 +26,8 @@ public class RagdollLaunch : MonoBehaviour
     private void Update()
     {
         if (hasLaunched) return;
+
+        if (EventSystem.current.IsPointerOverGameObject()) return; // You cannot launch ragdoll when a manu is open
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -60,7 +62,7 @@ public class RagdollLaunch : MonoBehaviour
     {
         UnfrezzeTorso();
 
-        float launchStrength = dragStrength / maxDragDistance * maxLaunchStrength;
+        float launchStrength = dragStrength / maxDragDistance * GetThrowStrength();
 
         torsoRigidbody2D.AddForce(dragDir * launchStrength, ForceMode2D.Impulse);
 
@@ -81,5 +83,10 @@ public class RagdollLaunch : MonoBehaviour
     public bool GetHasLaunched()
     {
         return hasLaunched;
+    }
+
+    private float GetThrowStrength()
+    {
+        return UpgradeManager.Instance.GetUpgradeValue(Upgrade.ThrowStrength) * Mathf.Sqrt(UpgradeManager.Instance.GetUpgradeValue(Upgrade.GravityScale)); // This keeps the same trajectory no matter the gravity scale
     }
 }

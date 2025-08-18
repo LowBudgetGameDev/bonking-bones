@@ -4,8 +4,32 @@ using UnityEngine;
 public class UpgradeSO : ScriptableObject
 {
     public string nameString;
+    public Upgrade upgrade;
+
+    [Header("Pricing")]
     public int startingPrice;
-    public int priceIncreaseAmount;
+    public float priceMultiplier;
+
+    [Header("Stats")]
     public float startValue;
     public float valueChangeAmount;
+
+    public int GetPrice(int level)
+    {
+        return (int) (startingPrice * Mathf.Pow(priceMultiplier, level));
+    }
+
+    public float GetValue(int level)
+    {
+        return startValue + (valueChangeAmount * level);
+    }
+}
+
+public enum Upgrade
+{
+    BounceIncrease,
+    FrictionDecrease,
+    GravityScale,
+    ScoreMultiplier,
+    ThrowStrength
 }

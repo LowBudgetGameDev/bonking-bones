@@ -7,20 +7,29 @@ public class RagdollReset : MonoBehaviour
     private RagdollLaunch ragdollLaunch;
 
     private float restTimer;
-    private float restTimerMax = 0.5f;
+    private float restTimerMax = 3f;
 
-    private float maxRestSpeed = 0.1f;
+    private float maxRestSpeed;
+    private float minMaxRestSpeed = 0.05f;
 
     private void Awake()
     {
         ragdollLaunch = GetComponent<RagdollLaunch>();
 
         restTimer = restTimerMax;
+        maxRestSpeed = 0f;
     }
 
     private void Update()
     {
         if (!ragdollLaunch.GetHasLaunched()) return;
+
+        if (maxRestSpeed == 0f)
+        {
+            maxRestSpeed = torsoRigidbody2D.linearVelocity.magnitude / 100f;
+
+            maxRestSpeed = Mathf.Clamp(maxRestSpeed, minMaxRestSpeed, Mathf.Infinity);
+        }
 
         restTimer -= Time.deltaTime;
 
@@ -32,8 +41,6 @@ public class RagdollReset : MonoBehaviour
         if (restTimer < 0f)
         {
             RagdollSpawner.Instance.SpawnRagdoll();
-
-            restTimer = restTimerMax;
         }
     }
 }

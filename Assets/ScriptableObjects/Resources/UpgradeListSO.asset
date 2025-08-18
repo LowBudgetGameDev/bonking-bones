@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: UpgradeListSO
   m_EditorClassIdentifier: 
   UpgradeList:
-  - {fileID: 11400000, guid: 23163cc983ba29c458b3786aebefd04c, type: 2}
-  - {fileID: 11400000, guid: 4823e682664264d4d95088480bcd1f62, type: 2}
   - {fileID: 11400000, guid: 390eb6903519dcd4d88a157a20040d2a, type: 2}
   - {fileID: 11400000, guid: 14db19fd649a24840aca84375231c660, type: 2}
+  - {fileID: 11400000, guid: 4823e682664264d4d95088480bcd1f62, type: 2}
+  - {fileID: 11400000, guid: 23163cc983ba29c458b3786aebefd04c, type: 2}
   - {fileID: 11400000, guid: 14823487c99ea4947b2ea5f71f6cf3e3, type: 2}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: ScoreMultiplier
   m_EditorClassIdentifier: 
   nameString: Score Multiplier
-  startingPrice: 1000
-  priceIncreaseAmount: 0
-  startValue: 0
-  valueChangeAmount: 0
+  upgrade: 3
+  startingPrice: 250
+  priceMultiplier: 2.5
+  startValue: 1
+  valueChangeAmount: 0.9

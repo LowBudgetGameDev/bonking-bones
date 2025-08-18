@@ -1,9 +1,12 @@
+using System;
 using Unity.Cinemachine;
 using UnityEngine;
 
 public class RagdollSpawner : MonoBehaviour
 {
     public static RagdollSpawner Instance { get; private set; }
+
+    public event EventHandler OnRagdollSpawned;
 
     [SerializeField] private Transform ragdollPrefab;
     [SerializeField] private CinemachineCamera followCamera;
@@ -26,5 +29,7 @@ public class RagdollSpawner : MonoBehaviour
         currentRagdoll = Instantiate(ragdollPrefab, spawnPoint, Quaternion.identity);
 
         currentRagdoll.GetComponent<RagdollCamera>().SetCameraTarget(followCamera);
+
+        OnRagdollSpawned?.Invoke(this, EventArgs.Empty);
     }
 }

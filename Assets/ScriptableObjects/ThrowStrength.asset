@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: ThrowStrength
   m_EditorClassIdentifier: 
   nameString: Throw Strength
-  startingPrice: 500
-  priceIncreaseAmount: 0
-  startValue: 0
-  valueChangeAmount: 0
+  upgrade: 4
+  startingPrice: 200
+  priceMultiplier: 2.4
+  startValue: 100
+  valueChangeAmount: 70

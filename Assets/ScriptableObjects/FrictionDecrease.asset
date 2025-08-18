@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: FrictionDecrease
   m_EditorClassIdentifier: 
   nameString: Friction Decrease
-  startingPrice: 350
-  priceIncreaseAmount: 0
-  startValue: 0
-  valueChangeAmount: 0
+  upgrade: 1
+  startingPrice: 75
+  priceMultiplier: 2.2
+  startValue: 1
+  valueChangeAmount: -0.1
