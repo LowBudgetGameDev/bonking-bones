@@ -68,6 +68,8 @@ public class RagdollLaunch : MonoBehaviour
 
         hasLaunched = true;
         launchArrowTransform.gameObject.SetActive(false);
+
+        SoundManager.Instance.PlaySound(SoundManager.Sound.RagdollThrow);
     }
 
     private void FreezeTorso()

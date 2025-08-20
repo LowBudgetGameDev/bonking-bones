@@ -10,6 +10,7 @@ public class MainMenuUI : MonoBehaviour
         playButton.onClick.AddListener(() =>
         {
             GameSceneManager.ChangeScene(GameSceneManager.Scene.MainScene);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
         });
     }
 }
