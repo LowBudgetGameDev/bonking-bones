@@ -2,11 +2,11 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class UIClick : MonoBehaviour, IPointerClickHandler
+public class UIClick : MonoBehaviour, IPointerDownHandler
 {
     private Action onClick;
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         onClick?.Invoke();
     }

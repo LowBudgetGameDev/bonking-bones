@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -27,7 +28,7 @@ public class RagdollLaunch : MonoBehaviour
     {
         if (hasLaunched) return;
 
-        if (EventSystem.current.IsPointerOverGameObject()) return; // You cannot launch ragdoll when a manu is open
+        if (IsMouseOverUIWithIgnores()) return; // You cannot launch ragdoll when a manu is open
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -44,6 +45,26 @@ public class RagdollLaunch : MonoBehaviour
         {
             Launch();
         }
+    }
+
+    private bool IsMouseOverUIWithIgnores()
+    {
+        PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
+        pointerEventData.position = Input.mousePosition;
+
+        List<RaycastResult> raycastResultList = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointerEventData, raycastResultList);
+
+        for (int i = 0; i < raycastResultList.Count; i++)
+        {
+            if (raycastResultList[i].gameObject.GetComponent<MouseUIClickthrough>() != null)
+            {
+                raycastResultList.RemoveAt(i);
+                i--;
+            }
+        }
+
+        return raycastResultList.Count > 0;
     }
 
     private void Aim()

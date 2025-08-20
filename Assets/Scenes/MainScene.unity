@@ -1214,6 +1214,7 @@ GameObject:
   - component: {fileID: 986244857}
   - component: {fileID: 986244856}
   - component: {fileID: 986244858}
+  - component: {fileID: 986244859}
   m_Layer: 5
   m_Name: OutsideShop
   m_TagString: Untagged
@@ -1288,6 +1289,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcd5982c82f0e874c98eee5d1cd12b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &986244859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986244854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e01ae90bb26338e47b74bdb0b0479de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &998788729
