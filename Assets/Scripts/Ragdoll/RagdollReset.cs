@@ -26,7 +26,7 @@ public class RagdollReset : MonoBehaviour
 
         if (maxRestSpeed == 0f)
         {
-            maxRestSpeed = torsoRigidbody2D.linearVelocity.magnitude / 100f;
+            maxRestSpeed = ragdollLaunch.GetThrowStrength() / 100f; // Takes 1% of the max launch strength so the rest speed will be the same no matter how hard you throw
 
             maxRestSpeed = Mathf.Clamp(maxRestSpeed, minMaxRestSpeed, Mathf.Infinity);
         }

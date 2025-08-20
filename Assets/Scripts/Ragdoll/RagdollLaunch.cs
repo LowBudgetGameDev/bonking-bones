@@ -108,7 +108,7 @@ public class RagdollLaunch : MonoBehaviour
         return hasLaunched;
     }
 
-    private float GetThrowStrength()
+    public float GetThrowStrength()
     {
         return UpgradeManager.Instance.GetUpgradeValue(Upgrade.ThrowStrength) * Mathf.Sqrt(UpgradeManager.Instance.GetUpgradeValue(Upgrade.GravityScale)); // This keeps the same trajectory no matter the gravity scale
     }
