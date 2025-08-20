@@ -20,7 +20,7 @@ public class RagdollScore : MonoBehaviour
         SoundManager.Instance.PlaySoundType(SoundManager.SoundType.RagdollHit);
 
         float boneBreakChance = 0.75f;
-        if (Random.Range(0f, 1f) < boneBreakChance) SoundManager.Instance.PlaySoundType(SoundManager.SoundType.RagdollBone); // Play bone break sound only sometimes depening on a chance 
+        if (Random.Range(0f, 1f) < boneBreakChance) SoundManager.Instance.PlaySoundType(SoundManager.SoundType.RagdollBone); // Play bone break sound only sometimes depening on a chance
     }
 
     // Not gonna lie this equation came from ChatGPT
