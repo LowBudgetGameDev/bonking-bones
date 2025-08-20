@@ -10,5 +10,7 @@ public class Decoration : MonoBehaviour
     private void Awake()
     {
         spriteRenderer.sprite = spriteList[Random.Range(0, spriteList.Count)];
+
+        spriteRenderer.sortingOrder = Random.Range(-5, -100); // Makes it less likely that two trees next to each other have the same sorting order
     }
 }
