@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: minSize
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1806467746539315421, guid: 59e9f0157346b6749a21fa9e3a2a758e, type: 3}
+      propertyPath: decorationPrefab
+      value: 
+      objectReference: {fileID: 6660966763757556932, guid: d478345a339edaa40b9c77ec254d6c54, type: 3}
     - target: {fileID: 1884461347304497873, guid: 59e9f0157346b6749a21fa9e3a2a758e, type: 3}
       propertyPath: m_Size.x
       value: 1093.4
