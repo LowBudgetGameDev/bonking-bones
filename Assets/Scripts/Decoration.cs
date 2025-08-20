@@ -10,7 +10,5 @@ public class Decoration : MonoBehaviour
     private void Awake()
     {
         spriteRenderer.sprite = spriteList[Random.Range(0, spriteList.Count)];
-
-        ShadowCaster2D shadowCaster = spriteRenderer.gameObject.AddComponent<ShadowCaster2D>(); // Create shadow caster in code because attaching to prefabs makes it stop working when instantiated
     }
 }
