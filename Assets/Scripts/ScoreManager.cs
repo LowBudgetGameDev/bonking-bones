@@ -8,8 +8,8 @@ public class ScoreManager : MonoBehaviour
     public event EventHandler OnScoreIncrease;
     public event EventHandler OnScoreDecrease;
 
-    private int score;
-    private int scaledUpScore; // This score will be 100x the normal score allowing for some decimals but will be rounded down when getting the final score
+    private long score;
+    private long scaledUpScore; // This score will be 100x the normal score allowing for some decimals but will be rounded down when getting the final score
 
     private void Awake()
     {
@@ -23,14 +23,14 @@ public class ScoreManager : MonoBehaviour
         OnScoreIncrease?.Invoke(this, EventArgs.Empty);
     }
 
-    public void DecreaseScore(int amount)
+    public void DecreaseScore(long amount)
     {
         scaledUpScore -= amount * 100;
         score = scaledUpScore / 100;
         OnScoreDecrease?.Invoke(this, EventArgs.Empty);
     }
 
-    public int GetScore()
+    public long GetScore()
     {
         return score;
     }

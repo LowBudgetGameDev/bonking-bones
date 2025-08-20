@@ -7,16 +7,16 @@ public class UpgradeSO : ScriptableObject
     public Upgrade upgrade;
 
     [Header("Pricing")]
-    public int startingPrice;
+    public long startingPrice;
     public float priceMultiplier;
 
     [Header("Stats")]
     public float startValue;
     public float valueChangeAmount;
 
-    public int GetPrice(int level)
+    public long GetPrice(int level)
     {
-        return (int) (startingPrice * Mathf.Pow(priceMultiplier, level));
+        return (long) (startingPrice * Mathf.Pow(priceMultiplier, level));
     }
 
     public float GetValue(int level)
