@@ -23,6 +23,6 @@ public class ScoreUI : MonoBehaviour
 
     private void UpdateText()
     {
-        scoreText.SetText("$" + ScoreManager.Instance.GetScore().ToString());
+        scoreText.SetText("$" + ScoreManager.Instance.GetScore().ToString("n0"));
     }
 }

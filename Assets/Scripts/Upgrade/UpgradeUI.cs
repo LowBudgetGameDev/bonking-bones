@@ -15,7 +15,7 @@ public class UpgradeUI : MonoBehaviour
         this.upgrade = upgrade;
 
         nameText.SetText(upgrade.nameString);
-        priceText.SetText("$" + upgrade.startingPrice.ToString());
+        priceText.SetText("$" + upgrade.startingPrice.ToString("n0"));
 
         buyButton.onClick.AddListener(() =>
         {
@@ -35,7 +35,7 @@ public class UpgradeUI : MonoBehaviour
 
         UpgradeManager.Instance.LevelUpUpgrade(upgrade.upgrade);
 
-        priceText.SetText("$" + upgrade.GetPrice(UpgradeManager.Instance.GetUpgradeLevel(upgrade.upgrade)).ToString());
+        priceText.SetText("$" + upgrade.GetPrice(UpgradeManager.Instance.GetUpgradeLevel(upgrade.upgrade)).ToString("n0"));
 
         SoundManager.Instance.PlaySound(SoundManager.Sound.Purchase);
     }
