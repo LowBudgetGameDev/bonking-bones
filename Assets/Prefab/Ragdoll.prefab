@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3964129338242068181}
   - component: {fileID: 7244383501030120783}
   - component: {fileID: 1462484074834448155}
+  - component: {fileID: 1967139797062556961}
   m_Layer: 6
   m_Name: Stickman_Arm_LR
   m_TagString: Untagged
@@ -231,6 +232,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1967139797062556961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59077860285800846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.25
+  bloodChance: 0.5
 --- !u!1 &1585648777885200396
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +263,7 @@ GameObject:
   - component: {fileID: 260327195723883868}
   - component: {fileID: 5206271263435947720}
   - component: {fileID: 9017588253284267505}
+  - component: {fileID: 5608320613618051210}
   m_Layer: 6
   m_Name: Stickman_Arm_UR
   m_TagString: Untagged
@@ -462,6 +479,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5608320613618051210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585648777885200396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.25
+  bloodChance: 0.5
 --- !u!1 &1665112247859872836
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +684,7 @@ GameObject:
   - component: {fileID: 3839886142061318773}
   - component: {fileID: 3205795121754743944}
   - component: {fileID: 737962136096815584}
+  - component: {fileID: 3162996313243131075}
   m_Layer: 6
   m_Name: Stickman_Leg_LR
   m_TagString: Untagged
@@ -867,6 +900,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3162996313243131075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139906997219928844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.25
+  bloodChance: 0.5
 --- !u!1 &2512641127140106708
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,6 +1017,7 @@ GameObject:
   - component: {fileID: 5626523465042385986}
   - component: {fileID: 9021182081675975599}
   - component: {fileID: 7035053162650306484}
+  - component: {fileID: 4878237759752004042}
   m_Layer: 6
   m_Name: Stickman_Torso
   m_TagString: Untagged
@@ -1158,6 +1207,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4878237759752004042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2723149243504452371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.75
+  bloodChance: 1
 --- !u!1 &4452775140069783425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,6 +1325,7 @@ GameObject:
   - component: {fileID: 8576768960913779703}
   - component: {fileID: 943768469551329221}
   - component: {fileID: 3560727845287015583}
+  - component: {fileID: 7956183942567709324}
   m_Layer: 6
   m_Name: Stickman_Head
   m_TagString: Untagged
@@ -1466,6 +1531,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7956183942567709324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4462637373178972124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.5
+  bloodChance: 0.75
 --- !u!1 &5005585495854050081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1562,7 @@ GameObject:
   - component: {fileID: 4366088845968416871}
   - component: {fileID: 2356470507681316241}
   - component: {fileID: 2312354196357302765}
+  - component: {fileID: 8089191141458100934}
   m_Layer: 6
   m_Name: Stickman_Leg_UL
   m_TagString: Untagged
@@ -1697,6 +1778,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8089191141458100934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5005585495854050081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.25
+  bloodChance: 0.5
 --- !u!1 &5337305514504375245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,6 +2300,7 @@ GameObject:
   - component: {fileID: 2875703128557951195}
   - component: {fileID: 5925403809940497115}
   - component: {fileID: 2283559822882575018}
+  - component: {fileID: 8833538110517212310}
   m_Layer: 6
   m_Name: Stickman_Arm_UL
   m_TagString: Untagged
@@ -2419,6 +2516,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8833538110517212310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281244191563673821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.25
+  bloodChance: 0.5
 --- !u!1 &6408382596474924080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,6 +2634,7 @@ GameObject:
   - component: {fileID: 7909478266737475128}
   - component: {fileID: 2585143461266490590}
   - component: {fileID: 3318936425571024213}
+  - component: {fileID: 7211269895873855989}
   m_Layer: 6
   m_Name: Stickman_Leg_LL
   m_TagString: Untagged
@@ -2737,6 +2850,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7211269895873855989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7018454181170601168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.25
+  bloodChance: 0.5
 --- !u!1 &7255893935151337454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2753,6 +2881,7 @@ GameObject:
   - component: {fileID: 303780686969557092}
   - component: {fileID: 762369544523738833}
   - component: {fileID: 1131982881449657611}
+  - component: {fileID: 4453476128782413806}
   m_Layer: 6
   m_Name: Stickman_Arm_LL
   m_TagString: Untagged
@@ -2968,6 +3097,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4453476128782413806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7255893935151337454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.25
+  bloodChance: 0.5
 --- !u!1 &8203380461181672725
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,6 +3334,7 @@ GameObject:
   - component: {fileID: 5199990108558180105}
   - component: {fileID: 4093922954437361730}
   - component: {fileID: 3441553065314739187}
+  - component: {fileID: 1081455024016471113}
   m_Layer: 6
   m_Name: Stickman_Leg_UR
   m_TagString: Untagged
@@ -3405,6 +3550,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccabad5a0374a9941a3ae81869714da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1081455024016471113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8938395703080300942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b59bd684ae15dc4197742050de49d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodPrefab: {fileID: 6590276541303015056, guid: 6bae989bac1c5ff4ea0adb081c281bda, type: 3}
+  bloodScale: 0.25
+  bloodChance: 0.5
 --- !u!1 &9089971849016483575
 GameObject:
   m_ObjectHideFlags: 0
