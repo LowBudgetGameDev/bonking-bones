@@ -554,9 +554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click Here
-
-    to Exit Shop'
+  m_text: Drag Here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cc3e405f0e48dd4c9205d3d208a4dcb, type: 2}
   m_sharedMaterial: {fileID: -5726391065683528850, guid: 2cc3e405f0e48dd4c9205d3d208a4dcb, type: 2}
