@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 public class RagdollLaunch : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D torsoRigidbody2D;
+    [SerializeField] private List<Rigidbody2D> limbRigidbodyList;
     [SerializeField] private Transform launchArrowTransform; // The arrow should be a child of the ragdoll to make things easier
     [SerializeField] private SpriteRenderer launchArrowSpriteRenderer;
 
@@ -21,7 +22,7 @@ public class RagdollLaunch : MonoBehaviour
     private void Awake()
     {
         hasLaunched = false;
-        FreezeTorso();
+        FreezeBody();
     }
 
     private void Update()
@@ -81,7 +82,7 @@ public class RagdollLaunch : MonoBehaviour
 
     private void Launch()
     {
-        UnfrezzeTorso();
+        UnfrezzeBody();
 
         float launchStrength = dragStrength / maxDragDistance * GetThrowStrength();
 
@@ -93,14 +94,24 @@ public class RagdollLaunch : MonoBehaviour
         SoundManager.Instance.PlaySound(SoundManager.Sound.RagdollThrow);
     }
 
-    private void FreezeTorso()
+    private void FreezeBody()
     {
         torsoRigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+
+        foreach (Rigidbody2D rigidbody2D in limbRigidbodyList)
+        {
+            rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+        }
     }
 
-    private void UnfrezzeTorso()
+    private void UnfrezzeBody()
     {
         torsoRigidbody2D.constraints = RigidbodyConstraints2D.None;
+
+        foreach (Rigidbody2D rigidbody2D in limbRigidbodyList)
+        {
+            rigidbody2D.constraints = RigidbodyConstraints2D.None;
+        }
     }
 
     public bool GetHasLaunched()
