@@ -27,6 +27,12 @@ public class UpgradeUI : MonoBehaviour
                 return;
             }
 
+            if (!UpgradeManager.Instance.CanLevelUpUpgrade(upgrade.upgrade))
+            {
+                SoundManager.Instance.PlaySound(SoundManager.Sound.UIError);
+                return;
+            }
+
             BuyUpgrade();
         });
     }
@@ -41,5 +47,10 @@ public class UpgradeUI : MonoBehaviour
         levelText.SetText("LVL: " + UpgradeManager.Instance.GetUpgradeLevel(upgrade.upgrade).ToString());
 
         SoundManager.Instance.PlaySound(SoundManager.Sound.Purchase);
+
+        if (!UpgradeManager.Instance.CanLevelUpUpgrade(upgrade.upgrade))
+        {
+            priceText.SetText("Maxed Out");
+        }
     }
 }

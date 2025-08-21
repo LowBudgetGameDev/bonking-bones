@@ -17,4 +17,4 @@ MonoBehaviour:
   startingPrice: 75
   priceMultiplier: 2.5
   startValue: 1
-  valueChangeAmount: -0.1
+  valueChangeAmount: -0.05

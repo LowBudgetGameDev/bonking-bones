@@ -13,6 +13,8 @@ public class UpgradeManager : MonoBehaviour
     private Dictionary<Upgrade, UpgradeSO> upgradeDictionary;
     private Dictionary<UpgradeSO, int> upgradeLevelDictionary;
 
+    private int maxLevel = 20;
+
     private void Awake()
     {
         Instance = this;
@@ -49,5 +51,10 @@ public class UpgradeManager : MonoBehaviour
     public int GetUpgradeLevel(Upgrade upgrade)
     {
         return upgradeLevelDictionary[upgradeDictionary[upgrade]];
+    }
+
+    public bool CanLevelUpUpgrade(Upgrade upgrade)
+    {
+        return upgradeLevelDictionary[upgradeDictionary[upgrade]] < maxLevel;
     }
 }
