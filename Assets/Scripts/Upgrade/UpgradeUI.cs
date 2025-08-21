@@ -7,6 +7,7 @@ public class UpgradeUI : MonoBehaviour
     [SerializeField] private Button buyButton;
     [SerializeField] private TextMeshProUGUI priceText;
     [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private TextMeshProUGUI levelText;
 
     private UpgradeSO upgrade;
 
@@ -16,6 +17,7 @@ public class UpgradeUI : MonoBehaviour
 
         nameText.SetText(upgrade.nameString);
         priceText.SetText("$" + upgrade.startingPrice.ToString("n0"));
+        levelText.SetText("LVL: " + UpgradeManager.Instance.GetUpgradeLevel(upgrade.upgrade).ToString());
 
         buyButton.onClick.AddListener(() =>
         {
@@ -36,6 +38,7 @@ public class UpgradeUI : MonoBehaviour
         UpgradeManager.Instance.LevelUpUpgrade(upgrade.upgrade);
 
         priceText.SetText("$" + upgrade.GetPrice(UpgradeManager.Instance.GetUpgradeLevel(upgrade.upgrade)).ToString("n0"));
+        levelText.SetText("LVL: " + UpgradeManager.Instance.GetUpgradeLevel(upgrade.upgrade).ToString());
 
         SoundManager.Instance.PlaySound(SoundManager.Sound.Purchase);
     }
