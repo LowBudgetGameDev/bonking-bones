@@ -1,9 +1,12 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class RagdollLaunch : MonoBehaviour
 {
+    public event EventHandler OnLaunch;
+
     [SerializeField] private Rigidbody2D torsoRigidbody2D;
     [SerializeField] private List<Rigidbody2D> limbRigidbodyList;
     [SerializeField] private Transform launchArrowTransform; // The arrow should be a child of the ragdoll to make things easier
@@ -92,6 +95,8 @@ public class RagdollLaunch : MonoBehaviour
         launchArrowTransform.gameObject.SetActive(false);
 
         SoundManager.Instance.PlaySound(SoundManager.Sound.RagdollThrow);
+
+        OnLaunch?.Invoke(this, EventArgs.Empty);
     }
 
     private void FreezeBody()
