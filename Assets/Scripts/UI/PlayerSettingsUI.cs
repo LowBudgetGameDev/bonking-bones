@@ -27,6 +27,7 @@ public class PlayerSettingsUI : MonoBehaviour
         applyButton.onClick.AddListener(() =>
         {
             SaveChanges();
+            SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
         });
     }
 

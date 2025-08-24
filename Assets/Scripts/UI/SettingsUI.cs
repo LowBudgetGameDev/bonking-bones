@@ -7,6 +7,9 @@ public class SettingsUI : MonoBehaviour
     [SerializeField] private Button videoAudioTabButton;
     [SerializeField] private Button playerTabButton;
 
+    [Header("Close Button")]
+    [SerializeField] private Button closeButton;
+
     private void Awake()
     {
         videoAudioTabButton.onClick.AddListener(() =>
@@ -23,6 +26,12 @@ public class SettingsUI : MonoBehaviour
             SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
         });
 
+        closeButton.onClick.AddListener(() =>
+        {
+            Hide();
+            SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
+        });
+
         videoAudioTabButton.gameObject.GetComponent<UITab>().Select();
         playerTabButton.gameObject.GetComponent<UITab>().Unselect();
 
@@ -35,6 +44,14 @@ public class SettingsUI : MonoBehaviour
 
         videoAudioTabButton.gameObject.GetComponent<UITab>().Select();
         playerTabButton.gameObject.GetComponent<UITab>().Unselect();
+    }
+
+    public void ShowPlayer()
+    {
+        gameObject.SetActive(true);
+
+        videoAudioTabButton.gameObject.GetComponent<UITab>().Unselect();
+        playerTabButton.gameObject.GetComponent<UITab>().Select();
     }
 
     public void Hide()

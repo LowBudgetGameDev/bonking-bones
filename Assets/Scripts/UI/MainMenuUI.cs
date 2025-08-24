@@ -7,6 +7,7 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] private Button playButton;
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button quitButton;
+    [SerializeField] private Button customizeButton;
 
     [Header("Menus")]
     [SerializeField] private SettingsUI settingsUI;
@@ -28,6 +29,13 @@ public class MainMenuUI : MonoBehaviour
         quitButton.onClick.AddListener(() =>
         {
             Application.Quit();
+            SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
+        });
+
+        customizeButton.onClick.AddListener(() =>
+        {
+            settingsUI.ShowPlayer();
+            SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
         });
     }
 }
