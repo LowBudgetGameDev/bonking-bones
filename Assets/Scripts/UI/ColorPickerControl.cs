@@ -133,4 +133,10 @@ public class ColorPickerControl : MonoBehaviour
     {
         return Color.HSVToRGB(currentHue, currentSaturation, currentValue);
     }
+
+    // A gray scale color that is opposite in value so it is visible when drawing with
+    public Color GetInverseColor()
+    {
+        return Color.HSVToRGB(0f, 0f, 1 - currentValue);
+    }
 }

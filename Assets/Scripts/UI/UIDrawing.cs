@@ -14,13 +14,16 @@ public class UIDrawing : MonoBehaviour
 
     private RawImage drawingSurface;
 
-    private Color drawColor = Color.black;
+    private Color drawColor = Color.white;
+    private Color visibleColor = Color.black; // This is the color that is seen in the drawing
 
     private Texture2D drawTexture;
 
     private void Start()
     {
         drawingSurface = GetComponent<RawImage>();
+
+        drawingSurface.color = visibleColor;
 
         drawTexture = new Texture2D(textureWidth, textureHeight, TextureFormat.RGBA32, false);
         ClearTexture();

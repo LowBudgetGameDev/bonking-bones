@@ -20,6 +20,8 @@ public class PlayerSettingsUI : MonoBehaviour
         drawing.OnDrawingChanged += (object sender, EventArgs e) =>
         {
             faceImage.texture = drawing.GetDrawing();
+
+            faceImage.color = colorPicker.GetInverseColor();
         };
 
         applyButton.onClick.AddListener(() =>
