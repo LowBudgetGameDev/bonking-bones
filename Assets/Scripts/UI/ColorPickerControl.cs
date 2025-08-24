@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,8 @@ using UnityEngine.UI;
 
 public class ColorPickerControl : MonoBehaviour
 {
+    public event EventHandler OnColorChanged;
+
     [SerializeField] private RawImage hueImage;
     [SerializeField] private RawImage svImage;
 
@@ -25,9 +28,16 @@ public class ColorPickerControl : MonoBehaviour
         CreateHueImage();
         CreateSVImage();
 
+        UpdateColor();
+
         hueSlider.onValueChanged.AddListener((float value) =>
         {
             UpdateSVImage(value);
+        });
+
+        hexInputField.onEndEdit.AddListener((string value) =>
+        {
+            OnTextInput(value);
         });
     }
 
@@ -64,7 +74,7 @@ public class ColorPickerControl : MonoBehaviour
 
         svTexture.Apply();
         currentSaturation = 0;
-        currentValue = 0;
+        currentValue = 1;
 
         svImage.texture = svTexture;
     }
@@ -73,9 +83,11 @@ public class ColorPickerControl : MonoBehaviour
     {
         currentSaturation = saturation;
         currentValue = value;
+
+        UpdateColor();
     }
 
-    public void UpdateSVImage(float value)
+    private void UpdateSVImage(float value)
     {
         currentHue = value;
 
@@ -88,5 +100,37 @@ public class ColorPickerControl : MonoBehaviour
         }
 
         svTexture.Apply();
+
+        UpdateColor();
+    }
+
+    private void OnTextInput(string value)
+    {
+        if (value.Length < 6) return;
+
+        Color colorFromInput;
+
+        if (ColorUtility.TryParseHtmlString("#" + value, out colorFromInput))
+        {
+            Color.RGBToHSV(colorFromInput, out currentHue, out currentSaturation, out currentValue);
+        }
+
+        hueSlider.value = currentHue;
+
+        hexInputField.text = "";
+
+        UpdateColor();
+    }
+
+    private void UpdateColor()
+    {
+        hexInputField.text = ColorUtility.ToHtmlStringRGB(GetColor());
+
+        OnColorChanged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public Color GetColor()
+    {
+        return Color.HSVToRGB(currentHue, currentSaturation, currentValue);
     }
 }
