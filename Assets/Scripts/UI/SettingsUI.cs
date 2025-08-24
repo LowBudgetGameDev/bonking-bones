@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SettingsUI : MonoBehaviour
 {
+    public event EventHandler OnClose;
+
     [Header("Tabs")]
     [SerializeField] private Button videoAudioTabButton;
     [SerializeField] private Button playerTabButton;
@@ -56,6 +59,8 @@ public class SettingsUI : MonoBehaviour
 
     public void Hide()
     {
+        OnClose?.Invoke(this, EventArgs.Empty);
+
         gameObject.SetActive(false);
     }
 }
