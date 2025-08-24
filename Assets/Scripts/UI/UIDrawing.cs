@@ -26,7 +26,18 @@ public class UIDrawing : MonoBehaviour
         drawingSurface.color = visibleColor;
 
         drawTexture = new Texture2D(textureWidth, textureHeight, TextureFormat.RGBA32, false);
-        ClearTexture();
+
+        if (PlayerPrefs.HasKey("PlayerFace"))
+        {
+            drawTexture = UtilsClass.DecodeStringToTexture2D(PlayerPrefs.GetString("PlayerFace"));
+
+            OnDrawingChanged?.Invoke(this, EventArgs.Empty);
+        }
+        else
+        {
+            ClearTexture();
+        }
+
         drawTexture.wrapMode = TextureWrapMode.Clamp;
 
         drawingSurface.texture = drawTexture;

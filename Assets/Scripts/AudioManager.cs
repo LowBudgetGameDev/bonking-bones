@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     {
         Instance = this;
 
-        volume = 1.0f;
+        volume = PlayerPrefs.GetFloat("Volume", 1.0f);
     }
 
     private void Start()
@@ -26,6 +26,7 @@ public class AudioManager : MonoBehaviour
         this.volume = volume;
 
         volume = Mathf.Clamp01(volume);
+        PlayerPrefs.SetFloat("Volume", volume);
 
         audioMixer.SetFloat("Volume", VolumeToGain(volume));
     }

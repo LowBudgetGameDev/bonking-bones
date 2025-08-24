@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.Rendering.DebugUI;
 
 // Code from https://www.youtube.com/watch?v=otDHGmncBQY
 
@@ -25,6 +26,7 @@ public class ColorPickerControl : MonoBehaviour
 
     private void Start()
     {
+        SetDefaultValues();
         CreateHueImage();
         CreateSVImage();
 
@@ -41,6 +43,12 @@ public class ColorPickerControl : MonoBehaviour
         });
     }
 
+    private void SetDefaultValues()
+    {
+        ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("PlayerColor", "FFFFFF"), out Color currentColor);
+        Color.RGBToHSV(currentColor, out currentHue, out currentSaturation, out currentValue);
+    }
+
     private void CreateHueImage()
     {
         hueTexture = new Texture2D(1, 16);
@@ -53,7 +61,6 @@ public class ColorPickerControl : MonoBehaviour
         }
 
         hueTexture.Apply();
-        currentHue = 0;
 
         hueImage.texture = hueTexture;
     }
@@ -73,8 +80,6 @@ public class ColorPickerControl : MonoBehaviour
         }
 
         svTexture.Apply();
-        currentSaturation = 0;
-        currentValue = 1;
 
         svImage.texture = svTexture;
     }
