@@ -33,7 +33,7 @@ public class PlayerSettingsUI : MonoBehaviour
 
     private void SaveChanges()
     {
-        PlayerPrefs.SetString("PlayerColor", ColorUtility.ToHtmlStringRGB(colorPicker.GetColor()));
-        PlayerPrefs.SetString("PlayerFace", UtilsClass.EncodeTexture2DToString(drawing.GetDrawing()));
+        SavedData.SetString(SavedData.Data.PlayerColor, ColorUtility.ToHtmlStringRGB(colorPicker.GetColor()));
+        SavedData.SetString(SavedData.Data.PlayerFace, UtilsClass.EncodeTexture2DToString(drawing.GetDrawing()));
     }
 }

@@ -43,7 +43,7 @@ public class MainMenuUI : MonoBehaviour
             SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
         });
 
-        settingsUI.OnClose += (object sender, EventArgs e) =>
+        SavedData.OnDataChanged += () =>
         {
             SetPlayerImage();
         };
@@ -53,14 +53,14 @@ public class MainMenuUI : MonoBehaviour
 
     private void SetPlayerImage()
     {
-        ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("PlayerColor", "FFFFFF"), out Color playerColor);
+        ColorUtility.TryParseHtmlString("#" + SavedData.GetString(SavedData.Data.PlayerColor, "FFFFFF"), out Color playerColor);
 
         playerImage.color = playerColor;
 
         Texture2D face = null;
-        if (PlayerPrefs.HasKey("PlayerFace"))
+        if (SavedData.HasKey(SavedData.Data.PlayerFace))
         {
-            face = UtilsClass.DecodeStringToTexture2D(PlayerPrefs.GetString("PlayerFace"));
+            face = UtilsClass.DecodeStringToTexture2D(SavedData.GetString(SavedData.Data.PlayerFace));
         }
 
         playerFaceImage.texture = face;

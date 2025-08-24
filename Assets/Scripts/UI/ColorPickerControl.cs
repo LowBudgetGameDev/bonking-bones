@@ -2,7 +2,6 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI;
 
 // Code from https://www.youtube.com/watch?v=otDHGmncBQY
 
@@ -45,7 +44,7 @@ public class ColorPickerControl : MonoBehaviour
 
     private void SetDefaultValues()
     {
-        ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("PlayerColor", "FFFFFF"), out Color currentColor);
+        ColorUtility.TryParseHtmlString("#" + SavedData.GetString(SavedData.Data.PlayerColor, "FFFFFF"), out Color currentColor);
         Color.RGBToHSV(currentColor, out currentHue, out currentSaturation, out currentValue);
     }
 

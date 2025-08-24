@@ -17,6 +17,7 @@ public class RagdollLaunch : MonoBehaviour
 
     private Vector3 startDragPosition;
 
+    private bool isLaunching;
     private bool hasLaunched;
 
     private Vector3 dragDir;
@@ -38,14 +39,15 @@ public class RagdollLaunch : MonoBehaviour
         {
             startDragPosition = UtilsClass.GetMouseWorldPosition();
             launchArrowTransform.gameObject.SetActive(true);
+            isLaunching = true;
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && isLaunching)
         {
             Aim();
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && isLaunching)
         {
             Launch();
         }

@@ -4,8 +4,6 @@ using UnityEngine.UI;
 
 public class SettingsUI : MonoBehaviour
 {
-    public event EventHandler OnClose;
-
     [Header("Tabs")]
     [SerializeField] private Button videoAudioTabButton;
     [SerializeField] private Button playerTabButton;
@@ -13,8 +11,21 @@ public class SettingsUI : MonoBehaviour
     [Header("Close Button")]
     [SerializeField] private Button closeButton;
 
+    [Header("Optional")]
+    [SerializeField] private Button openButton;
+
     private void Awake()
     {
+        if (openButton != null)
+        {
+            openButton.onClick.AddListener(() =>
+            {
+                Show();
+                SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
+                openButton.gameObject.SetActive(false);
+            });
+        }
+
         videoAudioTabButton.onClick.AddListener(() =>
         {
             videoAudioTabButton.gameObject.GetComponent<UITab>().Select();
@@ -59,8 +70,7 @@ public class SettingsUI : MonoBehaviour
 
     public void Hide()
     {
-        OnClose?.Invoke(this, EventArgs.Empty);
-
         gameObject.SetActive(false);
+        openButton?.gameObject.SetActive(true);
     }
 }

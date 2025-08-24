@@ -6,14 +6,19 @@ public class RagdollVisual : MonoBehaviour
     [SerializeField] private List<SpriteRenderer> bodySpriteRendererList;
     [SerializeField] private SpriteRenderer faceSpriteRenderer;
 
-    private void Awake()
+    private void Start()
     {
         UpdateVisuals();
+
+        SavedData.OnDataChanged += () =>
+        {
+            UpdateVisuals();
+        };
     }
 
     private void UpdateVisuals()
     {
-        ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("PlayerColor", "FFFFFF"), out Color playerColor);
+        ColorUtility.TryParseHtmlString("#" + SavedData.GetString(SavedData.Data.PlayerColor, "FFFFFF"), out Color playerColor);
 
         foreach (SpriteRenderer spriteRenderer in bodySpriteRendererList)
         {
@@ -21,9 +26,9 @@ public class RagdollVisual : MonoBehaviour
         }
 
         Texture2D face = null;
-        if (PlayerPrefs.HasKey("PlayerFace"))
+        if (SavedData.HasKey(SavedData.Data.PlayerFace))
         {
-            face = UtilsClass.DecodeStringToTexture2D(PlayerPrefs.GetString("PlayerFace"));
+            face = UtilsClass.DecodeStringToTexture2D(SavedData.GetString(SavedData.Data.PlayerFace));
         }
 
         float pixelsPerUnit = face.width / 1f; // This makes the face (which is a square texture) fit into the face of size 0.5 x 0.5 units^2. Don't ask why its dividing by 1 idk either.
