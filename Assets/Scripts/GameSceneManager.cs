@@ -6,7 +6,7 @@ public static class GameSceneManager
 {
     public enum Scene
     {
-        MainMenu,
+        MainMenuScene,
         MainScene,
         Loading
     }

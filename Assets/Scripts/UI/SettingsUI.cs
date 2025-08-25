@@ -11,6 +11,9 @@ public class SettingsUI : MonoBehaviour
     [Header("Close Button")]
     [SerializeField] private Button closeButton;
 
+    [Header("Main Menu Button")]
+    [SerializeField] private Button mainMenuButton;
+
     [Header("Optional")]
     [SerializeField] private Button openButton;
 
@@ -25,6 +28,12 @@ public class SettingsUI : MonoBehaviour
                 openButton.gameObject.SetActive(false);
             });
         }
+
+        mainMenuButton.onClick.AddListener(() =>
+        {
+            GameSceneManager.ChangeScene(GameSceneManager.Scene.MainMenuScene);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
+        });
 
         videoAudioTabButton.onClick.AddListener(() =>
         {
