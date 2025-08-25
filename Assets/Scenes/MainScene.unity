@@ -3119,6 +3119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1341680966}
   - component: {fileID: 1341680967}
+  - component: {fileID: 1341680968}
   m_Layer: 5
   m_Name: ShopUI
   m_TagString: Untagged
@@ -3162,6 +3163,28 @@ MonoBehaviour:
   upgradeContainer: {fileID: 1549782402}
   upgradeUIPrefab: {fileID: 1691639030598835295, guid: 0f781282f9e75834f9287ffdec475f30, type: 3}
   outsideShop: {fileID: 986244858}
+--- !u!95 &1341680968
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341680965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 79921c0b806c9cb44a1d934d72e54529, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1364641933
 GameObject:
   m_ObjectHideFlags: 0
@@ -3742,6 +3765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1558472546}
   - component: {fileID: 1558472547}
+  - component: {fileID: 1558472548}
   m_Layer: 5
   m_Name: ScoreUI
   m_TagString: Untagged
@@ -3782,6 +3806,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2064883063}
+--- !u!95 &1558472548
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558472545}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69751154bd02d7446a0f4af99e1d5cb7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1574014023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4487,6 +4533,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1957292381}
   - component: {fileID: 1957292382}
+  - component: {fileID: 1957292384}
+  - component: {fileID: 1957292383}
   m_Layer: 5
   m_Name: ResetUI
   m_TagString: Untagged
@@ -4527,6 +4575,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetButton: {fileID: 43531232}
+--- !u!225 &1957292383
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957292380}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &1957292384
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957292380}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aa9152c5cb23c204bbf2c22e1ba90813, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2064883061
 GameObject:
   m_ObjectHideFlags: 0
@@ -4555,7 +4637,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1558472546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

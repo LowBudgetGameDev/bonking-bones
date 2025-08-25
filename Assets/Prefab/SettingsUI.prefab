@@ -5785,6 +5785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8305438474768045231}
   - component: {fileID: 3906045328479419678}
+  - component: {fileID: 129133056656726363}
   m_Layer: 5
   m_Name: SettingsUI
   m_TagString: Untagged
@@ -5829,6 +5830,28 @@ MonoBehaviour:
   closeButton: {fileID: 8043001161204740220}
   mainMenuButton: {fileID: 5725406194439244305}
   openButton: {fileID: 0}
+--- !u!95 &129133056656726363
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6080224953354402134}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0474f045ce63dd943be1db4e22b0ed6c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6106870484624343056
 GameObject:
   m_ObjectHideFlags: 0
