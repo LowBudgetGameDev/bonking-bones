@@ -67,6 +67,6 @@ public class MainMenuUI : MonoBehaviour
 
         Color.RGBToHSV(playerColor, out float hue, out float saturation, out float value);
 
-        playerFaceImage.color = Color.HSVToRGB(0f, 0f, 1 - value);
+        if (SavedData.HasKey(SavedData.Data.PlayerFace)) playerFaceImage.color = Color.HSVToRGB(0f, 0f, 1 - value);
     }
 }
