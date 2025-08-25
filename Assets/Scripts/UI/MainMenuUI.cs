@@ -43,7 +43,7 @@ public class MainMenuUI : MonoBehaviour
             SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
         });
 
-        SavedData.OnDataChanged += () =>
+        SavedData.Instance.OnDataChanged += () =>
         {
             SetPlayerImage();
         };
@@ -53,20 +53,20 @@ public class MainMenuUI : MonoBehaviour
 
     private void SetPlayerImage()
     {
-        ColorUtility.TryParseHtmlString("#" + SavedData.GetString(SavedData.Data.PlayerColor, "FFFFFF"), out Color playerColor);
+        ColorUtility.TryParseHtmlString("#" + SavedData.Instance.GetString(SavedData.Data.PlayerColor, "FFFFFF"), out Color playerColor);
 
         playerImage.color = playerColor;
 
         Texture2D face = null;
-        if (SavedData.HasKey(SavedData.Data.PlayerFace))
+        if (SavedData.Instance.HasKey(SavedData.Data.PlayerFace))
         {
-            face = UtilsClass.DecodeStringToTexture2D(SavedData.GetString(SavedData.Data.PlayerFace));
+            face = UtilsClass.DecodeStringToTexture2D(SavedData.Instance.GetString(SavedData.Data.PlayerFace));
         }
 
         playerFaceImage.texture = face;
 
         Color.RGBToHSV(playerColor, out float hue, out float saturation, out float value);
 
-        if (SavedData.HasKey(SavedData.Data.PlayerFace)) playerFaceImage.color = Color.HSVToRGB(0f, 0f, 1 - value);
+        if (SavedData.Instance.HasKey(SavedData.Data.PlayerFace)) playerFaceImage.color = Color.HSVToRGB(0f, 0f, 1 - value);
     }
 }

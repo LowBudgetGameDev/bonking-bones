@@ -44,7 +44,7 @@ public class ColorPickerControl : MonoBehaviour
 
     private void SetDefaultValues()
     {
-        ColorUtility.TryParseHtmlString("#" + SavedData.GetString(SavedData.Data.PlayerColor, "FFFFFF"), out Color currentColor);
+        ColorUtility.TryParseHtmlString("#" + SavedData.Instance.GetString(SavedData.Data.PlayerColor, "FFFFFF"), out Color currentColor);
         Color.RGBToHSV(currentColor, out currentHue, out currentSaturation, out currentValue);
     }
 

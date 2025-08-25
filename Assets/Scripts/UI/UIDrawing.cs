@@ -27,9 +27,9 @@ public class UIDrawing : MonoBehaviour
 
         drawTexture = new Texture2D(textureWidth, textureHeight, TextureFormat.RGBA32, false);
 
-        if (SavedData.HasKey(SavedData.Data.PlayerFace))
+        if (SavedData.Instance.HasKey(SavedData.Data.PlayerFace))
         {
-            drawTexture = UtilsClass.DecodeStringToTexture2D(SavedData.GetString(SavedData.Data.PlayerFace));
+            drawTexture = UtilsClass.DecodeStringToTexture2D(SavedData.Instance.GetString(SavedData.Data.PlayerFace));
 
             OnDrawingChanged?.Invoke(this, EventArgs.Empty);
         }

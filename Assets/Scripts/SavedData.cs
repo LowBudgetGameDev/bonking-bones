@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public static class SavedData
+public class SavedData: MonoBehaviour
 {
     public enum Data
     {
@@ -9,44 +9,52 @@ public static class SavedData
         PlayerColor,
         PlayerFace
     }
+    
+    public static SavedData Instance {  get; private set; }
 
-    public static event Action OnDataChanged;
 
-    public static string GetString(Data data)
+    public event Action OnDataChanged;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public string GetString(Data data)
     {
         return PlayerPrefs.GetString(data.ToString());
     }
 
-    public static string GetString(Data data, string defaultString)
+    public string GetString(Data data, string defaultString)
     {
         return PlayerPrefs.GetString(data.ToString(), defaultString);
     }
 
-    public static void SetString(Data data, string value)
+    public void SetString(Data data, string value)
     {
         PlayerPrefs.SetString(data.ToString(), value);
 
         OnDataChanged?.Invoke();
     }
 
-    public static float GetFloat(Data data)
+    public float GetFloat(Data data)
     {
         return PlayerPrefs.GetFloat(data.ToString());
     }
 
-    public static float GetFloat(Data data, float defaultFloat)
+    public float GetFloat(Data data, float defaultFloat)
     {
         return PlayerPrefs.GetFloat(data.ToString(), defaultFloat);
     }
 
-    public static void SetFloat(Data data, float value)
+    public void SetFloat(Data data, float value)
     {
         PlayerPrefs.SetFloat(data.ToString(), value);
 
         OnDataChanged?.Invoke();
     }
 
-    public static bool HasKey(Data data)
+    public bool HasKey(Data data)
     {
         return PlayerPrefs.HasKey(data.ToString());
     }
