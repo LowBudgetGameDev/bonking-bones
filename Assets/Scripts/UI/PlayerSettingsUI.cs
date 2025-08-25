@@ -29,6 +29,12 @@ public class PlayerSettingsUI : MonoBehaviour
             SaveChanges();
             SoundManager.Instance.PlaySound(SoundManager.Sound.UIPress);
         });
+
+        playerImage.color = colorPicker.GetColor();
+
+        faceImage.texture = drawing.GetDrawing();
+
+        faceImage.color = colorPicker.GetInverseColor();
     }
 
     private void SaveChanges()
