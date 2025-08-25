@@ -17,8 +17,12 @@ public class SettingsUI : MonoBehaviour
     [Header("Optional")]
     [SerializeField] private Button openButton;
 
+    private Animator animator;
+
     private void Awake()
     {
+        animator = GetComponent<Animator>();
+
         if (openButton != null)
         {
             openButton.onClick.AddListener(() =>
@@ -65,6 +69,8 @@ public class SettingsUI : MonoBehaviour
     {
         gameObject.SetActive(true);
 
+        animator.SetBool("IsClosed", false);
+
         videoAudioTabButton.gameObject.GetComponent<UITab>().Select();
         playerTabButton.gameObject.GetComponent<UITab>().Unselect();
     }
@@ -73,13 +79,20 @@ public class SettingsUI : MonoBehaviour
     {
         gameObject.SetActive(true);
 
+        animator.SetBool("IsClosed", false);
+
         videoAudioTabButton.gameObject.GetComponent<UITab>().Unselect();
         playerTabButton.gameObject.GetComponent<UITab>().Select();
     }
 
     public void Hide()
     {
-        gameObject.SetActive(false);
-        openButton?.gameObject.SetActive(true);
+        animator.SetBool("IsClosed", true);
+
+        FunctionTimer.Create(() =>
+        {
+            gameObject.SetActive(false);
+            openButton?.gameObject.SetActive(true);
+        }, 0.5f);
     }
 }

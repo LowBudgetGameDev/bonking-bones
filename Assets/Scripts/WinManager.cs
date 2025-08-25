@@ -7,7 +7,7 @@ public class WinManager : MonoBehaviour
 
     public event EventHandler OnReachGoal;
 
-    private long winAmount = 20000000;
+    private long winAmount = 50000000;
 
     private bool hasWon;
 

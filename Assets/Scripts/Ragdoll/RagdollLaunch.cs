@@ -33,7 +33,7 @@ public class RagdollLaunch : MonoBehaviour
     {
         if (hasLaunched) return;
 
-        if (IsMouseOverUIWithIgnores()) return; // You cannot launch ragdoll when a manu is open
+        if (IsMouseOverUIWithIgnores() && !isLaunching) return; // You cannot launch ragdoll when a manu is open
 
         if (Input.GetMouseButtonDown(0))
         {

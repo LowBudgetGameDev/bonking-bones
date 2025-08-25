@@ -10,10 +10,12 @@ public class RagdollVisual : MonoBehaviour
     {
         UpdateVisuals();
 
-        SavedData.OnDataChanged += () =>
-        {
-            UpdateVisuals();
-        };
+        SavedData.OnDataChanged += UpdateVisuals;
+    }
+
+    private void OnDestroy()
+    {
+        SavedData.OnDataChanged -= UpdateVisuals;
     }
 
     private void UpdateVisuals()
