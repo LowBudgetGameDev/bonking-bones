@@ -5,3 +5,5 @@ This game is the second of a collection where each game is focussed on a letter 
 This game is for the letter "B" and I made the game about ***B**ones*.
 
 Built With: Unity + C#
+
+**Asset Attributions on [itch.io](https://lowbudgetgamedev.itch.io/bonking-bones)**
